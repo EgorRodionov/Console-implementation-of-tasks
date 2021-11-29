@@ -1,0 +1,23 @@
+using System;
+
+namespace Zadanie_1
+{
+    //Написать программу, которая подсчитывает: ребро куба, площадь полной поверхности которого равна s;
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("S = ");
+            float s = float.Parse(Console.ReadLine());
+            if(s >= 0)
+           {
+               double p = Math.Sqrt(s / 6);
+            Console.WriteLine("Ребро куба = " + p);
+           }
+           else
+           {
+               Console.WriteLine("Ошибка! Введите положительное число");
+           }
+        }
+    }
+}
